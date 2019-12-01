@@ -9,4 +9,4 @@ edition = "2018"
 [dependencies]
 sysfs_gpio = "*"
 nickel = "*"
-text_io = "*"
+nickel_cors = "0.3.3"

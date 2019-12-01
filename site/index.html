@@ -2,20 +2,14 @@
 <html>
 <body>
 <head>
-	<title>Discoball</title>
-	<style>
-	html {
-		background: url(images/background.png) no-repeat center center fixed;
-		background-size: cover;
-	}
-	</style>
+  <title>Discoball</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>	
-	</head>
+</head>
 <body>
 	<div class="jumbotron text-center">
 		<h1 style="color:blue;">D I S C O B A L L</h1>
@@ -27,8 +21,8 @@
 			</div>
 			<div class="col-sm-6" style="background-color: white;">
 				<h2 color="red">PARTY MODE</h2><br>
-				<a href="http://discoball/system/party/0" class="btn btn-primary btn-md btn-success" role="button">On</a>
-				<a href="http://discoball/system/party/1" class="btn btn-primary btn-md btn-danger" role="button">Off</a>
+				<button class="btn btn-primary btn-md btn-success" role="button" style="margin: 0 .5em 0 .5em;"onclick='javascript:x=new XMLHttpRequest();x.open("GET", "http://discoball/system/party/0", true); x.send()'>On</a>
+				<button class="btn btn-primary btn-md btn-danger" role="button" style="margin: 0 .5em 0 .5em;" onclick='javascript:x=new XMLHttpRequest();x.open("GET", "http://discoball/system/party/1", true); x.send()'>Off</a>
 			</div>
 			<div class="col-sm-3">
 			</div>
